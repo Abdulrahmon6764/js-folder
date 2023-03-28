@@ -1,0 +1,32 @@
+*{
+    margin: none;
+    list-style-type: none;
+    padding: none;
+}
+#name{
+    margin-left: 10px;
+    width: 500px;
+    border-color: green;
+}
+#degree{
+    margin-left: 10px;
+    width: 500px;
+    border-color: green;
+}
+#score{
+    margin-left: 10px;
+    width: 500px;
+    border-color: green;
+}
+#demo1{
+color: brown;
+}
+#demo3{
+    color: brown;
+}
+#demo4{
+    color: brown;
+}
+#demo5{
+    color: brown;
+}

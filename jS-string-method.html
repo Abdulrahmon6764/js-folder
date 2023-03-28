@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Strings-method</title>
+</head>
+<body>
+<h1 id="demo1">javaScript-Strings-method</h1>
+<h2 id="demo2"></h2>
+<h2 id="demo3"></h2>
+<h2 id="demo4"></h2>
+<h2 id="demo5"></h2>
+<h2 id="demo6">String subscript()</h2>
+<h2 id="demo7"></h2>
+<h2 id="demo8">String substr()</h2>
+<h2 id="demo9"></h2>
+<h2 id="demo10"></h2>
+<h2 id="demo11"></h2>
+<h2 id="demo12"></h2>
+<h2 id="demo13">String replace()</h2>
+
+<button onclick="myfunction()">Click</button>
+<p id="demo14">Pls visit Savebetter!</p>
+
+<button onclick="mycode()">Help</button>
+<p id="demo15">Need assistant?</p>
+
+<button onclick=" mydevice()">Click me!</button>
+<p id="demo16">Please visit Carts and Carts!</p>
+<h1>javaScript String ReplaceAll()</h1>
+
+<p id="demo17"></p>
+<p id="demo18"></p>
+<h1>Converting Upper and Lower Case</h1>
+
+<button onclick=" mycon()">Click here</button>
+<p id="demo19">Hello World!</p>
+
+<button onclick="tue()">Click me</button>
+<p id="demo20">Welcome World!</p>
+
+<h1>String strim()</h1>
+<p id="demo21"></p>
+
+<h1>Padding start & end</h1>
+<p id="demo22"></p>
+<p id="demo23"></p>
+<h1>indexOf() & lastIndexOf()</h1>
+<p id="demo24"></p>
+<p id="demo25"></p>
+<p id="demo26"></p>
+<h1>String search()</h1>
+<p id="demo27"></p>
+<p id="demo28"></p>
+<p id="demo29"></p>
+<p id="demo30"></p>
+<h1>String matchAll()</h1>
+<p id="demo31"></p>
+
+
+
+
+<script>
+var words = "Steam, Apple, American";
+let figures = words.slice(7,12);
+document.getElementById("demo2").innerHTML= figures;
+
+var done = "Sephora, Amazon, GooglePlay."
+let done2 = done.slice(9)
+document.getElementById("demo3").innerHTML=done2;
+
+const work1 = "Roblox, vanilla, footlocker."
+let work2 = work1.slice(-20)
+document.getElementById("demo4").innerHTML=work2;
+
+ let bigi1 = "Iphone1, Iphone2, Iphone3"
+ var bigi2 = bigi1.slice(-16,-9)
+document.getElementById("demo5").innerHTML= bigi2;
+
+let fruit1 = "Mango, Orange, Guava."
+const fruit2 = fruit1.substring(7,21)
+document.getElementById("demo7").innerHTML= fruit2; 
+
+var car1 = "BENZ, BMW, MAYBACK."
+const car2 = car1.substr(6)
+document.getElementById("demo9").innerHTML= car2; 
+
+const item1 = "Rice, Beans, Yam."
+var item2 = item1.substr(6,11)
+document.getElementById("demo10").innerHTML= item2;
+
+let lang1 = "JavaScript, Boostrap, CSS."
+var lang2 = lang1.substr(12)
+document.getElementById("demo11").innerHTML= lang2;
+
+let prog1 = "Good, Honest, Loyalty."
+var prog2 = prog1.slice(-8)
+document.getElementById("demo12").innerHTML=prog2;
+
+function myfunction(){
+    const music1 = document.getElementById("demo14").innerHTML;
+ document.getElementById("demo14").innerHTML= music1.replace("Savebetter", "LoanAmount")
+
+}
+
+function mycode(){
+    let word1 = document.getElementById("demo15").innerHTML;
+    document.getElementById('demo15').innerHTML=word1.replace("assistant","support");
+    
+}
+
+function mydevice(){
+    let text1 = document.getElementById("demo16").innerHTML;
+    document.getElementById("demo16").innerHTML= text1.replace("Carts","Shoppingitem")
+}
+ 
+// function replaceall(){
+//     let replace1 = document.getElementById("demo17").innerHTML;
+//     document.getElementById("demo17").innerHTML=replace1.replaceall("Buys", "Sells")
+//     document.getElementById("demo17").innerHTML= replace1.replaceall("rate",)
+// }
+
+var allwords1 = "Buys any time of gift cards in good rate, Buys bitcoins in good rate."
+allwords1 = allwords1.replaceAll("Buys","Sells");
+allwords1= allwords1.replaceAll("rate","naira");
+
+document.getElementById("demo17").innerHTML=allwords1;
+
+
+let sentence1 = "Buys any time of gift cards in good rate, Buys bitcoins in good rate."
+    sentence1 = sentence1.replaceAll(/Buys/g,"Sells");
+    sentence1 = sentence1.replaceAll(/rate/g, "naira");
+    document.getElementById("demo18").innerHTML=sentence1;
+
+function mycon(){
+    let con1 = document.getElementById("demo19").innerHTML
+    document.getElementById("demo19").innerHTML=con1.toUpperCase();
+}
+
+function tue(){
+    let text3 = document.getElementById("demo20").innerHTML
+    document.getElementById("demo20").innerHTML=text3.toLowerCase();
+}
+//trim()
+let first1 = "      You're welcome    "
+ first2 = first1.trimEnd();
+console.log(first2)
+// padStart
+let start1 = "9"
+let start2 = start1.padStart(3,"0");
+document.getElementById("demo22").innerHTML=start2;
+/// padEnd
+let start3 = "5"
+let start4 = start3.padEnd(3,"X");
+document.getElementById("demo23").innerHTML=start4;
+// indexOf()
+let names = "Kunle has gone home, Kunle on his way"
+document.getElementById("demo24").innerHTML= names.indexOf("Kunle");
+// lastIndexOf()
+let names1 = "Kunle has gone home, Kunle on his way"
+document.getElementById("demo25").innerHTML=names1.lastIndexOf("Kunle");
+//
+let exer1 = "Kunle has gone home, Kunle on his way"
+document.getElementById("demo26").innerHTML=exer1.lastIndexOf("Kunle" ,15);
+
+//search()
+let sua1 = "The Sun is bright, Sun dry cloth. "
+document.getElementById("demo27").innerHTML=sua1.search("Sun");
+
+let sua2 = "The Sun is bright, Sun dry cloth."
+document.getElementById("demo28").innerHTML=sua2.search(/Sun/);
+
+let sua3 = "The Sun is bright, Sun dry cloth."
+document.getElementById("demo29").innerHTML=sua3.search(/Sun/i);
+
+let sua4 = "The Sun is bright, Sun dry cloth."
+document.getElementById("demo30").innerHTML=sua4.search(/Sun/ig);
+//match()
+let match1 = "The rain in SPAIN stays mainly in the plain"
+console.log(match1.match("ain"));
+
+let match2 = "The rain in SPAIN stays mainly in the plain"
+const match3 = match2.match(/ain/);
+console.log(match3);
+
+let air1 = "The rain in SPAIN stays mainly in the plain"
+const air2 = air1.match(/ain/g);
+console.log(air2);
+ 
+let air3 = "The rain in SPAIN stays mainly in the plain"
+const air4 = air3.match(/ain/gi);
+console.log(air4);
+//matchAll()
+let doc1 = "I love dogs. Dogs are very easy to love. Dogs are very popular."
+const doc2 = doc1.matchAll("Dogs");
+console.log(Array.from(doc2));
+
+let doc3 = "I love dogs. Dogs are very easy to love. Dogs are very popular."
+const doc4 = doc3.matchAll(/Dogs/gi);
+console.log(Array.from(doc4));
+
+
+
+</script>    
+</body>
+</html>

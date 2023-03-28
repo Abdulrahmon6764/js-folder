@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript Strings</title>
+</head>
+<body>
+<h1>javaScript Strings</h1>
+<h1 id="demo1"></h1>
+<h1 id="demo2"></h1>
+<h1 id="demo3"></h1>
+<h1 id="demo4"></h1>
+<h2 id="demo5"></h2>
+<h2 id="demo6"></h2>
+<h2 id="demo7"></h2>
+<h2 id="demo8"></h2>
+<h2 id="demo9"></h2>
+<h2 id="demo10"></h2>
+<h2 id="demo11"></h2>
+<h2 id="demo12"></h2>
+<h2 id="demo13"></h2>
+
+<script>
+let money = "Two million dollars"
+document.getElementById("demo1").innerHTML=money;
+
+const nairamoney1 = "fifty million naira"
+let dollarmoney1 = "Two million dollars"
+document.getElementById("demo2").innerHTML= nairamoney1 + " " + dollarmoney1;
+
+var rate1 = "steam-'320/$'" 
+const rate2 = 'googlePlay-"470/$"'
+let rate3 = "ebay-'550/$'"
+document.getElementById("demo3").innerHTML= rate1 + "<br>" + rate2 + "<br>" + rate3; 
+
+let numbers = "HDNCSJDSJSAK"
+document.getElementById("demo4").innerHTML= numbers.length;
+
+ let giftcards = "\"Steam card\", \"GooglePlay cards\"."
+ document.getElementById("demo5").innerHTML= giftcards;
+
+ let games = "I don\'t like playing call of duty, Only football games."
+ document.getElementById("demo6").innerHTML= games;
+
+let fivealive = "Steam card \\ GooglePlay card"
+document.getElementById("demo7").innerHTML= fivealive;
+
+const glass = "ebay card \b apple card"
+document.getElementById("demo8").innerHTML=glass;
+
+var happyday = "Roblox card \n visa gift card "
+document.getElementById("demo9").innerHTML= happyday;
+
+const x = new String("Hello world")
+document.getElementById("demo10").innerHTML= x; 
+
+
+
+</script>    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function-example</title>
+    <link rel="stylesheet" href="function.css">
+</head>
+<body>
+    
+<h1 id="demo1"></h1>
+<h1 id="demo2"></h1>
+<h1 id="demo3"></h1>
+<h1 id="demo5">Account Balance $<b id="demo4"></b></h1>
+<p id="demo6"></p>
+
+
+
+
+<script>
+function mylord(a,b){
+    return a + b
+}    
+document.getElementById("demo1").innerHTML= mylord(2,2);
+
+function allah(parameter1,parameter2,parameter3){
+    return parameter1 + parameter2 + parameter3  
+}
+document.getElementById("demo2").innerHTML= allah(2,2,1);
+
+
+let z = mydollar(3,2)
+document.getElementById("demo3").innerHTML=z;
+
+function mydollar(a,b){
+    return 2000 * 800
+}
+
+function sense(q){
+    return (500/100) * (q-28500)
+}
+document.getElementById("demo4").innerHTML="my " + sense(95000) + " " + "balance";
+ 
+mycode();
+function mycode(){
+    let balance = "BTC"
+    let figure = 0.0203937372
+    document.getElementById("demo6").innerHTML= balance + figure;
+}
+function aler(){
+    alert("Hello world")
+}
+aler();
+
+
+
+</script>    
+</body>
+</html>

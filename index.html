@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+<div class="container"  style="background-color: aqua;">
+    <p>
+        <h1 style="color: brown;" >STUDENT GRADE CHECKER </h1>
+        <h2>Calculate Your Module Average or Degree Classification.<br> </h2>
+    </p>
+</div>    
+
+<div class="container">
+    <p>
+        <label id="demo5" for="name">Name</label>
+        <input type="text" name="" id="name" placeholder="Usman">
+    </p>
+
+    <p>
+        <label id="demo4" for="degree">Degree</label>
+        <input type="text" name="" id="degree" placeholder="Bussiness Administration">
+    </p>
+
+    <p>
+        <label id="demo3" for="score">Score</label>
+        <input type="text" name="" id="score" placeholder="75">
+    </p>
+
+    <p>
+        <button type="button" onclick="allah()" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Get Score
+</button>
+    </p>
+<p>
+    <h1 id="demo1"></h1>
+</p>
+
+</div>
+
+
+
+
+<script>
+function allah(){
+    let score = document.getElementById("score").value 
+    let ramadan
+    if(score >= 70 && score <= 100){
+        ramadan = "A"
+    }
+    else if(score >= 60 && score <= 69){
+        ramadan = "B"
+    }
+    else if(score >= 50 && score <= 59){
+        ramadan = "C"
+    }
+    else if(score >= 44 && score <= 49){
+        ramadan = "D"
+    }
+    else if(score > 100 || score < 0){
+        ramadan = "Invalid score"
+    }
+    else{
+        ramadan = "Failure"
+    }
+    document.getElementById("demo1").innerHTML=ramadan;
+}    
+
+</script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

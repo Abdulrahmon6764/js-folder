@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional-statement</title>
+</head>
+<body>
+<h1 id="demo1"></h1>
+<h1 id="demo2"></h1>
+<h1 id="demo3"></h1>
+
+<h1 id="demo5"></h1>
+
+
+
+<script>
+   let dates
+if(new Date().getHours() < 20){
+   dates = "Good Day"
+   document.getElementById("demo1").innerHTML= dates;
+   
+}
+
+var hours = new Date().getHours()
+let welcome
+if(hours < 180){
+    hours = "Good days"
+}
+else{
+   hours = "Goodnight"
+}
+document.getElementById("demo2").innerHTML= hours;
+
+const time  = new Date().getHours();
+let newhours
+if(time < 10 ){
+    newhours = "Good day"
+}
+else if(time < 30){
+    newhours = "Goodnight"
+}
+else{
+    newhours = "Goodmorning"
+}
+document.getElementById("demo3").innerHTML = newhours;
+
+// let get = alert(); 
+
+
+// if(get  < 10 ){
+   
+//     alert("Good" )
+  
+// }
+// else if(get < 20 ){
+//    alert("Good Work")
+// }
+
+// else{
+//     alert("Rubbish")
+// }
+// alert()
+let x = 20
+let y = 30
+if(x > y){
+    alert("Hello world")
+}else if(x < y){
+    alert("Coding is sweet")
+}else{
+    alert("Happy Ramadan")
+}
+
+
+
+
+</script>    
+</body>
+</html>
